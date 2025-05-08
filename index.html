@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Groww Smart - Learn to Earn</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><a href="#">GROWW SMART</a></div>
+    <div class="navbar-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#fields">Fields</a>
+      <a href="#join">Join</a>
+      <a href="#blogs">Blogs</a>
+    </div>
+    <div class="dropdown">
+      <button class="join-now" onclick="toggleDropdown()">Join Now</button>
+      <div class="dropdown-content" id="dropdown">
+        <button class="login-btn">Login <i class="fas fa-user"></i></button>
+        <button class="signup-btn">Signup <i class="fas fa-user-plus"></i></button>
+      </div>
+    </div>
+    <button class="mobile-menu-icon" onclick="toggleMobileMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h3>Empower Your Future with GROWW SMART</h3>
+    <h1 class="static">LEARN <span class="dynamic">to EARN</span></h1>
+    <hr class="line" />
+    <p class="motivation">Turning your curiosity into career success</p>
+    <div class="buttons">
+      <a href="#" class="login">Login</a>
+      <a href="#" class="signup">Signup</a>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="about" id="about">
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>
+        At GROWW SMART, we bridge the gap between learning and earning. Our mission is to provide
+        hands-on education and real-world mentorship to help learners unlock their full potential in today's tech-driven world.
+      </p>
+    </div>
+  </section>
+
+  <!-- Fields -->
+  <section class="categories detailed" id="fields">
+    <h2>Explore Career Tracks</h2>
+    <div class="category-detailed-list">
+      <div class="category-detailed-card">
+        <i class="fas fa-code"></i>
+        <h3>Frontend Dev</h3>
+        <p>Build interactive UIs with React, Vue & TailwindCSS.</p>
+      </div>
+      <div class="category-detailed-card">
+        <i class="fas fa-server"></i>
+        <h3>Backend Dev</h3>
+        <p>Architect scalable APIs with Node.js, Express & Django.</p>
+      </div>
+      <div class="category-detailed-card">
+        <i class="fas fa-brain"></i>
+        <h3>AI & ML</h3>
+        <p>Master machine learning, NLP & neural networks using Python.</p>
+      </div>
+      <div class="category-detailed-card">
+        <i class="fas fa-database"></i>
+        <h3>Data Science</h3>
+        <p>Extract insights using Pandas, NumPy & PowerBI.</p>
+      </div>
+      <div class="category-detailed-card">
+        <i class="fas fa-cloud"></i>
+        <h3>Cloud Computing</h3>
+        <p>Deploy services on AWS, GCP, and Azure with CI/CD.</p>
+      </div>
+      <div class="category-detailed-card">
+        <i class="fas fa-link"></i>
+        <h3>Blockchain</h3>
+        <p>Develop dApps using Solidity & explore DeFi systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h3>Stay Connected</h3>
+      <p>Subscribe for the latest updates</p>
+      <input type="email" placeholder="Enter your email" class="footer-input">
+      <button class="subscribe-btn">Subscribe</button>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p class="copyright">© 2025 GROWW SMART. Created by KOMAL KANWAR.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
