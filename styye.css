@@ -1,0 +1,155 @@
+:root {
+  --primary: #4a67f5;
+  --secondary: #ff6b6b;
+  --bg-light: #f4f6fc;
+  --text-dark: #333;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+/* Navbar */
+.navbar {
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.mobile-menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+}
+
+.join-now {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  min-width: 160px;
+}
+
+.dropdown-content button {
+  padding: 10px;
+  background: none;
+  border: none;
+  text-align: left;
+  color: var(--primary);
+  cursor: pointer;
+  width: 100%;
+}
+
+.dropdown-content.show {
+  display: flex;
+}
+
+/* Hero */
+.hero {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #dfe9f3, #fff);
+}
+
+.static {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.dynamic {
+  color: var(--primary);
+}
+
+.line {
+  width: 40%;
+  margin: 1.5rem auto;
+  border: 1px solid #ccc;
+}
+
+.motivation {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.login, .signup {
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.login {
+  background: var(--secondary);
+}
+
+.signup {
+  background: var(--primary);
+}
+
+/* About */
+.about {
+  background: var(--bg-light);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.about p {
+  max-width: 600
+}
